@@ -1,8 +1,9 @@
 #include <stdio.h>
-
+#include<stdlib.h>
 int main() {
-    char *option[] = {"addition", "subtraction", "multiplication", "division", "modulus", "exit"};
-    int select, n, a, b, sum=0, x[100000],mul=1,div;
+
+    int select, n, a, b, sum=0, x[100000],mul=1;
+    float div;
     char choice;
 
         printf("1. Addition\n");
@@ -60,7 +61,7 @@ int main() {
                 break;
 
             case 6: // Exit
-                printf("Exit\n");
+                exit(0);
                 break;
 
             default:
